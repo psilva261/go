@@ -10,15 +10,16 @@ import (
 
 const (
 	KeyFn = '\uF000'
+	Spec  = '\uF800'
 
+	KeyView      = Spec | 0x00
 	KeyHome      = KeyFn | 0x0D
 	KeyUp        = KeyFn | 0x0E
 	KeyPageUp    = KeyFn | 0xF
 	KeyPrint     = KeyFn | 0x10
 	KeyLeft      = KeyFn | 0x11
 	KeyRight     = KeyFn | 0x12
-	KeyDown      = 0x80
-	KeyView      = 0x80
+	KeyDown      = KeyView
 	KeyPageDown  = KeyFn | 0x13
 	KeyInsert    = KeyFn | 0x14
 	KeyEnd       = KeyFn | 0x18
